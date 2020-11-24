@@ -1,0 +1,23 @@
+footer {
+  background: $cgBlue;
+  color: $bodyColor;
+  .wrapper {
+    height: 93px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-family: $bodyFont;
+      font-size: 14px;
+      color: $titleColor;
+    }
+    .linkbar {
+      img {
+        width: 22px;
+        height: 22px;
+        object-fit: cover;
+      }
+    }
+  }
+}

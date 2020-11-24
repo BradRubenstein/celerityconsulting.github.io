@@ -1,0 +1,52 @@
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $cgBlue;
+  color: $titleColor;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 97px;
+    h1 {
+      font-size: 30px;
+      letter-spacing: 0.06em;
+      font-family: $titleFont;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block;
+      white-space: nowrap;
+      img {
+        position: relative;
+        width: 55px;
+        height: 29px;
+        top: 4px;
+        left: 13px;
+      }
+    }
+    .menu {
+      display: block;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 14px;
+      span {
+        display: inline-block;
+        color: $selectedColor;
+        margin: 0 1em;
+      }
+      a {
+        display: inline-block;
+        text-align: center;
+        color: $titleColor;
+        margin: 0 1em;
+        &:hover {
+          color: $bodyColor;
+          transition: color .4s ease;
+        }
+      }
+    }
+  }
+}

@@ -1,31 +1,14 @@
 $cgBlue: rgb(35,97,136);
 $cgRed: rgb(136,35,70);
-$bodyFont: 'open sans', 'sans-serif';
+$bodyFont: 'Open Sans';
+$titleFont: 'Raleway';
 $bodyColor: rgb(51,51,51);
 $bodyBg: rgb(255,255,255);
 $contentColor: rgb(6,33,52);
-$mainFontColor: rgb
+$titleColor: rgb(255,255,255);
+$selectedColor: rgb(153,153,153);
+$boxBg: rgb(102,102,102);
+$boxColor: $bodyBg;
+$titleColor2: rgb(179,215,237);
 
-body {
-  margin: 0;
-  background: $cgBlue;
-  #content {
-    margin: 0 auto;
-    max-width: 600px;
-    background: white;
-  }
-}
-
-h1 {
-  font-family: raleway, sans-serif;
-  font-size: 30px;
-
-}
-
-p {
-  background: white;
-  color: rgb(51,51,51);
-  font-family: 'open sans', 'sans-serif';
-  font-size: 14px;
-
-}
+$maxWidth: 980px;

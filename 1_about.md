@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about
+order: 1
 ---
-# About Celerity
-
+<div class=twocol markdown=1>
+<div class=col1 markdown=1>
 We are committed to transforming how teams execute projects. Our
 approach focuses on the novel use of simple tools, engaging
 participants in new types of conversations, and establishing the
@@ -31,6 +32,12 @@ Leveraging our Risk Up Front™  methodology, we coach project teams
 to accelerate product development, management teams to meet their
 quarterly objectives, and company-wide cross-functional teams to
 implement organizational change.
+</div>
+![]({{'/images/about1.png' | relative_url }})
+</div>
+
+<div class=blue>
+<div class="onecol show-on-scroll" markdown=1>
 
 ## ACCELERATE PRODUCT DEVELOPMENT
 
@@ -73,7 +80,13 @@ organizations that appear to be “stuck”, we are experts at breaking
 the inertia (along with the accompanying cynicism and resignation)
 that stands in the way of progress.
 
+</div>
+</div>
+
+<div class="onecol-w" markdown=1>
 # HOW WE WORK
+
+![Working Together]({{ '/images/about2.png' | relative_url }})
 
 Our engagements begin with a set of interviews across the organization,
 which result in a brief report that is designed to be widely
@@ -95,3 +108,6 @@ by the entire cross-functional team, including senior management.
 Our clients regularly see measurable and significant improvement
 in their projects, organizations and profits because we are very
 effective at helping companies change the way they execute.
+
+<a class=button href="{{ '/client' | relative_url }}">Meet Our Clients</a>
+</div>

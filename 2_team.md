@@ -1,9 +1,15 @@
 ---
-layout: page
-title: The Team
+layout: default
+title: Team
 permalink: /team
+order: 2
 ---
-# Adam Josephs
+<div class="twocol-w team" markdown=1>
+
+<img alt="Adam Josephs" src="{{ 'images/bio-adam.png' | relative_url }}"/>
+<div>
+<h2>Adam Josephs</h2>
+<p>
 Adam Josephs is a Partner at Celerity Consulting Group LLC.  He has
 managed engineering projects and product organizations for over 20
 years at Apple Computer, Microsoft and a variety of startups.  He
@@ -15,8 +21,13 @@ University, UC, Berkeley, Singularity University and at industry
 conferences. He is a graduate of Stanford University and is completing
 his Doctorate at Oxford University.  Adam makes his home in New
 York City, and is an active rugby player.
-# Brad Rubenstein
-![Brad Rubenstein](/images/brad-bio.webp)
+</p>
+</div>
+
+<img alt="Brad Rubenstein" src="{{ 'images/bio-brad.png' | relative_url }}"/>
+<div>
+<h2>Brad Rubenstein</h2>
+<p>
 Brad Rubenstein is a Partner at Celerity Consulting Group LLC.
 Prior to joining Celerity, his career spanned over 15 years working
 as a software developer and system architect at Sun Microsystems
@@ -33,3 +44,6 @@ festivals, produced indie films, and is an active theater producer
 with a passion for mentoring budding playwrights and performers.
 He holds a Ph.D. in Computer Science from the University of California
 at Berkeley.
+</p>
+</div>
+</div>

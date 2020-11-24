@@ -1,0 +1,92 @@
+.banner {
+  height: 550px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  .ruf-banner {
+    position: absolute;
+    background: white;
+    opacity: .7;
+    top: 104px;
+    right: 50px;
+    z-index: 1;
+    margin: 0;
+    padding: 10px;
+    width: 275px;
+    height: 120px;
+    font-weight: bold;
+    color: $cgBlue;
+    text-align: left;
+    span {
+      color: $cgRed;
+      text-transform: uppercase;
+      font-size: 50px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    img {
+      height:100px;
+      width: 100px;
+      object-fit: cover;
+      float: right;
+    }
+  }
+  .credit {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: $maxWidth;
+    color: $bodyBg;
+    white-space: nowrap;
+    bottom: 165px;
+    font-family: $bodyFont;
+    font-variant: italic;
+    z-index: 1;
+  }
+  .tag {
+    width: 100%;
+    height: 100.4px;
+    background: rgba($cgRed,0.72);
+    font-family: $titleFont;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    white-space: nowrap;
+    padding-top: 30px;
+    color: $bodyBg;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.title {
+  text-align: center;
+  h1 {
+    text-align: center;
+    font-family: $titleFont;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: .05em;
+    font-weight: normal;
+    margin-top: 153px;
+    margin-bottom: 3px;
+    color: $cgRed;
+    text-transform: uppercase;
+    display: block;
+  }
+  .line {
+    border-top: 6px solid $cgBlue;
+    transform-origin: center 3px;
+    width: 124px;
+    height: 6px;
+    display: inline-block;
+    margin-bottom: 44px;
+  }
+}

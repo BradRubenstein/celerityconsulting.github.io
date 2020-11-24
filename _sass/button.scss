@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+  &.button {
+    font-family: $bodyFont;
+    font-size: 16px;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    background: $cgRed;
+    color: white;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: $bodyColor;
+      transition: background-color .4s ease;
+    }
+  }
+}
