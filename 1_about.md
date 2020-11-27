@@ -109,5 +109,5 @@ Our clients regularly see measurable and significant improvement
 in their projects, organizations and profits because we are very
 effective at helping companies change the way they execute.
 
-<a class=button href="{{ '/client' | relative_url }}">Meet Our Clients</a>
+<a class=button href="{{ '/clients' | relative_url }}">Meet Our Clients</a>
 </div>
