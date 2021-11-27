@@ -33,7 +33,9 @@ to accelerate product development, management teams to meet their
 quarterly objectives, and company-wide cross-functional teams to
 implement organizational change.
 </div>
+<div markdown=1>
 ![]({{'/images/about1.png' | relative_url }})
+</div>
 </div>
 
 <div class=blue>

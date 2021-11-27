@@ -9,11 +9,11 @@
     {% assign sorted_pages = site.pages | sort:"order" %}
     {% for p in sorted_pages %}
       {% if p.order > 0 %}
-      {% if p.permalink == page.permalink %}
-        <span>{{p.title}}</span>
-      {% else %}
-        <a href="{{ p.permalink | relative_url }}">{{ p.title }}</a>
-      {% endif %}
+        {% if p.permalink == page.permalink %}
+          <span>{{p.title}}</span>
+        {% else %}
+          <a href="{{ p.permalink | relative_url }}">{{ p.title }}</a>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </div>

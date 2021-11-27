@@ -15,10 +15,11 @@ body {
   padding: 0;
   background: white;
   color: $bodyColor;
+  width: 100%;
   .wrapper {
     margin: 0 auto;
-    padding: 0;
-    width: $maxWidth;
+    padding: 1em;
+    max-width: $maxWidth;
   }
 }
 
@@ -41,6 +42,7 @@ h1 {
   text-align: center;
   background: $cgBlue;
   color: $titleColor;
+  padding: 1em;
   .show-on-scroll {
     display: flex;
     flex-direction: column;
@@ -51,7 +53,7 @@ h1 {
       font-family: $bodyFont;
       font-size: 20px;
       line-height: 1.4em;
-      width: 766px;
+      max-width: 766px;
       margin: 0;
       padding: 0;
       margin-bottom: 52px;
@@ -65,11 +67,15 @@ h1 {
 
 section {
   .twocol {
-    width: $maxWidth;
+    max-width: $maxWidth;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 532px 1fr;
-    grid-column-gap: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .col1 {
+      max-width: 533px;
+      padding: 0 1em;
+    }
 
     p {
       margin-bottom: 16px;
@@ -87,15 +93,12 @@ section {
       font-size: 26px;
     }
   }
-  .download {
-    width: 500px;
+  .info {
+    max-width: $maxWidth;
     margin: 0 auto;
-    padding-bottom: 36px;
-    display: grid;
-    grid-template-columns: 1fr 50px;
-    grid-column-gap: 2em;
-    grid-row-gap: 50px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
     h2 {
       font-family: $titleFont;
       color: $cgBlue;
@@ -103,6 +106,7 @@ section {
     a {
       text-align: left;
       display: inline-block;
+      margin-bottom: 1em;
       &:hover {
         opacity: .5;
       }
@@ -119,9 +123,9 @@ section {
     color: $titleColor;
   }
   .onecol {
-    width: 888px;
+    max-width: 888px;
     margin: 0 auto;
-    padding-bottom: 36px;
+    padding: 36px;
 
     h2 {
       display: inline-block;
@@ -143,8 +147,9 @@ section {
     }
   }
   .onecol-w {
-    width: $maxWidth;
+    max-width: $maxWidth;
     margin: 0 auto;
+    padding: 0 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,11 +167,11 @@ section {
     }
   }
   .twocol-w {
-    width: $maxWidth;
+    max-width: $maxWidth;
     margin: 0 auto 50px auto;
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    grid-row-gap: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     img {
       width: 300px;
@@ -175,6 +180,8 @@ section {
       border-radius: 4px;
       grid-row-end: span 1;
       display: block;
+      margin-bottom: 1em;
+      margin: 0 20px 20px 20px;
     }
     &.team img {
       height: 300px;
@@ -186,11 +193,12 @@ section {
       font-size: 24px;
       line-height: 1.2em;
       font-weight: normal;
-      margin-bottom: 20px;
+      margin: 0 20px 20px 20px;
     }
 
     p {
-      width: 527px;
+      max-width: 527px;
+      margin: 0 20px 20px 20px;
     }
   }
 }
@@ -202,12 +210,14 @@ section {
   font-family: $bodyFont;
 
   input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 10px;
     font-family: inherit;
   }
   textarea {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 200px;
     margin: 10px;
     resize: none;
@@ -232,5 +242,124 @@ section {
     margin-bottom: 10px;
     font-family: inherit;
 
+  }
+}
+
+.ruf {
+  background-color: #e21c21;
+  color: white;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+
+  img {
+    max-width: 340px;
+    width: 35vw;
+    margin-right: 20px;
+    object-fit: cover;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: block;
+    box-shadow: rgba(0,0,0,.25) 1.41px 1.41px 4px 2px;
+  }
+
+  .imgtext {
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 10px;
+    margin-bottom: 1in;
+    .spacer {
+      background: black;
+      width: 40vw;
+      height: 50vw;
+      max-width: 340px;
+      max-height: 440px;
+    }
+  }
+  .wrapper {
+    max-width: 661px;
+    margin: 10px auto;
+    padding: 10px;
+    border-top: thin solid white;
+  }
+  h1 {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 14px 0 0 0;
+  }
+  p {
+    font-size: 14px;
+    font-family: inherit;
+    margin: 14px 0 0 0;
+  }
+  .top {
+    background: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 37px;
+      letter-spacing: .04em;
+      span {
+        color: #e21c21;
+      }
+    }
+    h1 {
+      font-size: 65px;
+      line-height: 70px;
+      font-weight: bold;
+      margin: 0;
+      margin-top: -20px;
+
+    }
+    h2 {
+      letter-spacing: 1.44px;
+      font-size: 30px;
+      font-family: 'open sans condensed', sans-serif;
+      font-weight: normal;
+      margin: -10px 10px 10px 0;
+
+    }
+    p {
+      margin-top: 1em;
+    }
+  }
+  a {
+    color: rgb(255,252,104);
+  }
+  .buttonrow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a.button {
+      text-align: center;
+      display: inline-block;
+      background: black;
+      width: 277px;
+      height: 40px;
+      line-height: 40px;
+      font-family: sans-serif;
+      color: white;
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+  }
+  .quote {
+    max-width: 539px;
+    margin: 14px auto;
   }
 }

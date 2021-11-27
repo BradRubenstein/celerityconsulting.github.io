@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Downloads
+title: Info
 permalink: /downloads
 order: 4
 ---
-<div class="download">
+<div class="info">
 
 <div>
 <h2>Celerity Consulting Brochure</h2>
-<p>An overview of our company and engagement approach.</p>
+<p>An overview of our company and engagement approach (442 Kb PDF).</p>
 </div>
 
 <a target="_blank" title="Download PDF" href="{{ "/download/celerity-brochure.pdf" | relative_url }}">

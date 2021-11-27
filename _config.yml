@@ -1,29 +1,19 @@
 title: Celerity Consulting
 email: info@celerityconsulting.com
+favicon: /images/cg-logo-32x32.png
 logo: /images/cg-logo-93x54.png
-description: >- # this means to ignore newlines until "baseurl:"
-  Celerity Consulting brings the power of Risk Up Front to accelerate,
-  and jumpstart your projects. We focus on helping organizations of all
-  sizes create high-performance project teams.
+copyright: "2021 Celerity Consulting Group, Inc. All Rights Reserved."
+google_site_verification: "LNR7yDdDdi9bNUyr6B-xZc-aoYZXEwRGJbFALmbO4JU"
+google_analytics: "UA-57408603-1"
+description: >-
+  Accelerate product development.
+  Create high performance teams.
+  Jumpstart organizational change.
+url: "https://www.celerityconsulting.com"
 twitter_username: celeritycg
-github_username:  celerityconsulting
+linkedin_username: celerity-consulting-group-llc
+# github_username:  celerityconsulting
 
-# Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
-
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

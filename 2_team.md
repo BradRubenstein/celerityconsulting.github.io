@@ -4,7 +4,7 @@ title: Team
 permalink: /team
 order: 2
 ---
-<div class="twocol-w team" markdown=1>
+<div class="twocol-w team">
 
 <img alt="Adam Josephs" src="{{ 'images/bio-adam.png' | relative_url }}"/>
 <div>

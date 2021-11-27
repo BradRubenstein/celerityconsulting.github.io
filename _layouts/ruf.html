@@ -19,22 +19,6 @@
     <![endif]-->
   </head>
   <body onLoad="javascript:showOnScrollSetup()">
-    <header>
-      {% include header.html %}
-    </header>
-    {% if page.banner %}
-      <div class="banner" style="background-image: url({{page.banner.image | relative_url }})">
-        <div class="bottom">
-          <div class="credit">{{ page.banner.credit }}</div>
-          <div class="tag">{{ page.banner.tag }}</div>
-        </div>
-      </div>
-    {% else %}
-      <div class="title">
-        <h1 class=title>{{page.title}}</h1>
-        <div class="line"></div>
-      </div>
-    {% endif %}
     <section>
       {{content}}
     </section>
