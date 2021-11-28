@@ -4,7 +4,7 @@ title: Info
 permalink: /downloads
 order: 4
 ---
-<div class="info">
+<div class="wrapper info">
 
 <div>
 <h2>Celerity Consulting Brochure</h2>

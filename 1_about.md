@@ -4,7 +4,7 @@ title: About
 permalink: /about
 order: 1
 ---
-<div class=twocol markdown=1>
+<div class="wrapper twocol" markdown=1>
 <div class=col1 markdown=1>
 We are committed to transforming how teams execute projects. Our
 approach focuses on the novel use of simple tools, engaging
@@ -33,13 +33,12 @@ to accelerate product development, management teams to meet their
 quarterly objectives, and company-wide cross-functional teams to
 implement organizational change.
 </div>
-<div markdown=1>
+<div class="col2" markdown=1>
 ![]({{'/images/about1.png' | relative_url }})
 </div>
 </div>
 
-<div class=blue>
-<div class="onecol show-on-scroll" markdown=1>
+<div class="blue wrapper onecol show-on-scroll" markdown=1>
 
 ## ACCELERATE PRODUCT DEVELOPMENT
 
@@ -83,9 +82,8 @@ the inertia (along with the accompanying cynicism and resignation)
 that stands in the way of progress.
 
 </div>
-</div>
 
-<div class="onecol-w" markdown=1>
+<div class="blue wrapper onecol-w" markdown=1>
 # HOW WE WORK
 
 ![Working Together]({{ '/images/about2.png' | relative_url }})

@@ -37,12 +37,12 @@ banner:
 
 </div>
 
-<div class="band">
-  <div class="show-on-scroll">
-    <h1>ABOUT US</h1>
-    <p>
-    We are committed to transforming how teams execute projects. Our approach focuses on the novel use of simple tools, engaging participants in new types of conversations, and establishing the rigorous application of core principles. Leveraging our Risk Up Front™  methodology, we coach project teams to accelerate product development, management teams to meet their quarterly objectives, and company-wide cross-functional teams to implement organizational change.
-    </p>
-    <a class=button title="Click here to learn more." href="{{ "/about" | relative_url }}"><span>Read More</span></a>
-  </div>
+<div class="blue">
+<div class="onecol band show-on-scroll">
+  <h1>ABOUT US</h1>
+  <p>
+  We are committed to transforming how teams execute projects. Our approach focuses on the novel use of simple tools, engaging participants in new types of conversations, and establishing the rigorous application of core principles. Leveraging our Risk Up Front™  methodology, we coach project teams to accelerate product development, management teams to meet their quarterly objectives, and company-wide cross-functional teams to implement organizational change.
+  </p>
+  <a class=button title="Click here to learn more." href="{{ "/about" | relative_url }}"><span>Read More</span></a>
+</div>
 </div>

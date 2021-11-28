@@ -6,6 +6,7 @@ header {
   width: 100%;
   background: $cgBlue;
   color: $titleColor;
+  border-bottom: thin solid lighten($cgBlue,10%);
   .wrapper {
     display: flex;
     align-items: center;
@@ -18,7 +19,7 @@ header {
       font-weight: 400;
       text-transform: uppercase;
       display: block;
-      white-space: wrap;
+      color: $titleColor;
 
       img {
         position: relative;

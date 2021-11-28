@@ -5,9 +5,10 @@ permalink: /contact
 order: 5
 ---
 
-<div class=wrapper>
+<div class="wrapper onecol">
+<center>
 Use this form to send us a message:
-
+</center>
 <form action="https://getform.io/f/e1a66ce8-72de-4e37-8ad6-536ee8fdccfc" method="POST">
 
     <input type="hidden" id="captchaResponse" name="g-recaptcha-response">

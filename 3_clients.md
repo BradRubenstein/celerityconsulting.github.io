@@ -4,7 +4,7 @@ title: Clients
 permalink: /clients
 order: 3
 ---
-<div class="twocol-w" >
+<div class="wrapper twocol-w" >
 <img src="{{ '/images/c_gs.png' | relative_url }}"/>
 <div>
 <h2>GOLDMAN SACHS</h2>
