@@ -29,29 +29,94 @@ header {
         left: 13px;
       }
     }
-    .menu {
-      display: block;
-      font-family: 'Open Sans';
-      font-weight: 400;
-      font-size: 14px;
-      span {
-        display: inline-block;
-        color: $selectedColor;
-        margin: 1em;
-        min-width: 60px;
-        text-align: center;
-      }
-      a {
-        display: inline-block;
-        text-align: center;
+  }
+}
+
+nav {
+  display: block;
+  font-family: $titleFont;
+  input,svg {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    li {
+      color: $selectedColor;
+      min-width: 60px;
+      text-align: center;
+      display: inline-block;
+    }
+    a {
+      text-decoration: none;
+      li {
         color: $titleColor;
-        min-width: 60px;
-        margin:  1em;
+        transition: color 0.4s ease;
         &:hover {
           color: $bodyColor;
-          transition: color .4s ease;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: $screenWidthBreak) {
+  nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    user-select: none;
+    input,svg {
+      display: block;
+      width: 33px;
+      height: 33px;
+      margin: 0;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+    input {
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+    svg {
+      background: $cgBlue;
+      border-radius: 3px;
+      z-index: 1;
+      transition: transform 0.5s ease;
+      fill: none;
+      path {
+        stroke: $titleColor;
+      }
+    }
+    input:checked ~ svg {
+      transform: rotate(90deg);
+    }
+    ul {
+      width: 150px;
+      height: auto;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 50px;
+      padding-top: 100px;
+      background: $cgBlue;
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      transition: transform 0.5s ease;
+      li {
+        padding: 10px 0;
+        font-size: 22px;
+        display: block;
+      }
+    }
+    input:checked ~ ul {
+      transform: none;
     }
   }
 }

@@ -1,20 +1,26 @@
 <div class=wrapper>
   <h1>
     <a href="{{ "/" | absolute_url }}">
-      <img src="{{site.logo | relative_url}}" alt="Logo" />
+      <img src="{{site.logo | relative_url}}" alt="" />
       {{ site.title | default: site.github.repository_name }}
     </a>
   </h1>
-  <div class="menu">
-    {% assign sorted_pages = site.pages | sort:"order" %}
-    {% for p in sorted_pages %}
-      {% if p.order > 0 %}
-        {% if p.permalink == page.permalink %}
-          <span>{{p.title}}</span>
-        {% else %}
-          <a href="{{ p.permalink | relative_url }}">{{ p.title }}</a>
+  <nav role="navigation">
+    <input type="checkbox" />
+    <svg class="burger" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L0 10L10 10L10 0L0 0M2 3L8 3M2 5L8 5M2 7L8 7"/>
+    </svg>
+    <ul id="menu">
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for p in sorted_pages %}
+        {% if p.order > 0 %}
+          {% if p.permalink == page.permalink %}
+            <li>{{p.title}}</li>
+          {% else %}
+            <a href="{{ p.permalink | relative_url }}"><li>{{ p.title }}</li></a>
+          {% endif %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </ul>
+  </nav>
 </div>
